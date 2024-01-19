@@ -20,43 +20,18 @@
                     <div class="image_wrapper">
                         <img src="me.jpg" alt="Till Bungert" />
                     </div>
-                    Lorem ipsum dolor sit amet, consectetur adipisici elit, sed
-                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquid ex ea commodi consequat. Quis aute iure reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
+                    I am a PhD student at the <a href="https://iml-dkfz.github.io/">Interactive Machine Learning
+                        Group</a> working on safe and reliable image classification algorithms.
                 </section>
                 <section class="single">
                     <h2>Projects</h2>
 
-                    <h3>nnActive</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisici elit, sed
-                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquid ex ea commodi consequat. Quis aute iure reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
-
-                    <h3>fd-shifts</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisici elit, sed
-                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquid ex ea commodi consequat. Quis aute iure reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
+                    <h3>dotfiles</h3>
+                        There's no place like ~/. <br />
+                        Dotfiles for my terminal-based workflow.
 
                     <h3>pytorch-revnet</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisici elit, sed
-                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquid ex ea commodi consequat. Quis aute iure reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
+                        Implementation of the reversible residual network in PyTorch.
                 </section>
             </div>
             <div>
@@ -65,39 +40,36 @@
                 <div class="container">
                     <section class="paper">
                         <h3>
-                            An Exploration of Normalizing Flows for Outlier Generation
+                            Understanding Silent Failures in Medical Image Classification
                         </h3>
 
                         <div class="image_wrapper">
-                            <img src="./master_thesis.png" alt="Master Thesis" />
+                            <img src="https://raw.githubusercontent.com/IML-DKFZ/sf-visuals/main/docs/screenshot.png"
+                                alt="SF-Visuals" />
                         </div>
 
-                        Outliers are an important topic in statistics and machine
-                        learning. They can be hard to identify and what constitutes an
-                        outlier might even be subjective. In recent years, work has been
-                        done to use different generative models for outliers. This can
-                        not only allow one to investigate what potential outliers might
-                        look like directly, it can also be used to improve
-                        classification models, as particularly deep neural network
-                        classifiers using rectified linear units as activations have
-                        been shown to yield high-confidence predictions even far away
-                        from the training data. We propose using a normalizing flow to
-                        model the probability density of the training data and generate
-                        outliers by sampling from an outlier distribution in latent
-                        space. We improve interpretability and control over the
-                        generated samples by applying archetypal analysis to the latent
-                        space of the normalizing flow. We show how this leads to
-                        outliers with varying similarity to the inlier data. These
-                        outliers can also be used for subsequent tasks such as training
-                        confidence-calibrated classifiers.
+                        To ensure the reliable use of classification systems in medical applications, it is crucial to
+                        prevent silent failures. This can be achieved by either designing classifiers that are robust
+                        enough to avoid failures in the first place, or by detecting remaining failures using confidence
+                        scoring functions (CSFs). A predominant source of failures in image classification is
+                        distribution shifts between training data and deployment data. To understand the current state
+                        of silent failure prevention in medical imaging, we conduct the first comprehensive analysis
+                        comparing various CSFs in four biomedical tasks and a diverse range of distribution shifts.
+                        Based on the result that none of the benchmarked CSFs can reliably prevent silent failures, we
+                        conclude that a deeper understanding of the root causes of failures in the data is required. To
+                        facilitate this, we introduce SF-Visuals, an interactive analysis tool that uses latent space
+                        clustering to visualize shifts and failures. On the basis of various examples, we demonstrate
+                        how this tool can help researchers gain insight into the requirements for safe application of
+                        classification systems in the medical domain. The open-source benchmark and tool are at:
+                        https://github.com/IML-DKFZ/sf-visuals.
 
                         <section class="paper-metadata">
-                            Till Bungert, <br />
-                            Master's Thesis, 2021
+                            Till J. Bungert, Levin Kobelke, Paul F. Jaeger <br />
+                            MICCAI, 2023
                         </section>
                         <section class="paper-links">
                             <span class="link_icon">
-                                <a href="https://github.com/tbung/outlier-characterization">
+                                <a href="https://github.com/IML-DKFZ/sf-visuals">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                         <path
                                             d="M369.941 97.941l-83.882-83.882A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v416c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48V131.882a48 48 0 0 0-14.059-33.941zM332.118 128H256V51.882L332.118 128zM48 464V48h160v104c0 13.255 10.745 24 24 24h104v288H48zm101.677-115.115L116.854 320l32.822-28.885a8.793 8.793 0 0 0 .605-12.624l-17.403-18.564c-3.384-3.613-8.964-3.662-12.438-.401L62.78 313.58c-3.703 3.474-3.704 9.367.001 12.84l57.659 54.055a8.738 8.738 0 0 0 6.012 2.381 8.746 8.746 0 0 0 6.427-2.782l17.403-18.563a8.795 8.795 0 0 0-.605-12.626zm84.284-127.85l-24.401-7.084a8.796 8.796 0 0 0-10.905 5.998L144.04 408.061c-1.353 4.66 1.338 9.552 5.998 10.905l24.403 7.084c4.68 1.355 9.557-1.354 10.905-5.998l54.612-188.112c1.354-4.66-1.337-9.552-5.997-10.905zm87.258 92.545l-57.658-54.055c-3.526-3.307-9.099-3.165-12.439.401l-17.403 18.563a8.795 8.795 0 0 0 .605 12.625L267.146 320l-32.822 28.885a8.793 8.793 0 0 0-.605 12.624l17.403 18.564a8.797 8.797 0 0 0 12.439.401h-.001l57.66-54.055c3.703-3.473 3.703-9.366-.001-12.839z" />
@@ -109,7 +81,7 @@ License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1,
                                 </a>
                             </span>
                             <span class="link_icon">
-                                <a href="https://github.com/tbung/master-thesis/raw/main/main.pdf">
+                                <a href="https://arxiv.org/pdf/2307.14729">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                         <path
                                             d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z" />
@@ -124,39 +96,38 @@ License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1,
                     </section>
                     <section class="paper">
                         <h3>
-                            An Exploration of Normalizing Flows for Outlier Generation
+                            A call to reflect on evaluation practices for failure detection in image classification
                         </h3>
 
                         <div class="image_wrapper">
-                            <img src="./master_thesis.png" alt="Master Thesis" />
+                            <img src="https://raw.githubusercontent.com/IML-DKFZ/fd-shifts/main/docs/new_overview.png"
+                                alt="FD-Shifts" />
                         </div>
 
-                        Outliers are an important topic in statistics and machine
-                        learning. They can be hard to identify and what constitutes an
-                        outlier might even be subjective. In recent years, work has been
-                        done to use different generative models for outliers. This can
-                        not only allow one to investigate what potential outliers might
-                        look like directly, it can also be used to improve
-                        classification models, as particularly deep neural network
-                        classifiers using rectified linear units as activations have
-                        been shown to yield high-confidence predictions even far away
-                        from the training data. We propose using a normalizing flow to
-                        model the probability density of the training data and generate
-                        outliers by sampling from an outlier distribution in latent
-                        space. We improve interpretability and control over the
-                        generated samples by applying archetypal analysis to the latent
-                        space of the normalizing flow. We show how this leads to
-                        outliers with varying similarity to the inlier data. These
-                        outliers can also be used for subsequent tasks such as training
-                        confidence-calibrated classifiers.
+                        Reliable application of machine learning-based decision systems in the wild is one of the major
+                        challenges currently investigated by the field. A large portion of established approaches aims
+                        to detect erroneous predictions by means of assigning confidence scores. This confidence may be
+                        obtained by either quantifying the model's predictive uncertainty, learning explicit scoring
+                        functions, or assessing whether the input is in line with the training distribution. Curiously,
+                        while these approaches all state to address the same eventual goal of detecting failures of a
+                        classifier upon real-life application, they currently constitute largely separated research
+                        fields with individual evaluation protocols, which either exclude a substantial part of relevant
+                        methods or ignore large parts of relevant failure sources. In this work, we systematically
+                        reveal current pitfalls caused by these inconsistencies and derive requirements for a holistic
+                        and realistic evaluation of failure detection. To demonstrate the relevance of this unified
+                        perspective, we present a large-scale empirical study for the first time enabling benchmarking
+                        confidence scoring functions w.r.t all relevant methods and failure sources. The revelation of a
+                        simple softmax response baseline as the overall best performing method underlines the drastic
+                        shortcomings of current evaluation in the abundance of publicized research on confidence
+                        scoring. Code and trained models are at https://github.com/IML-DKFZ/fd-shifts.
 
                         <section class="paper-metadata">
-                            Till Bungert, <br />
-                            Master's Thesis, 2021
+                            Paul F. Jaeger, Carsten T. Lüth, Lukas Klein, Till J. Bungert <br />
+                            ICLR, 2023
                         </section>
                         <section class="paper-links">
                             <span class="link_icon">
-                                <a href="https://github.com/tbung/outlier-characterization">
+                                <a href="https://github.com/IML-DKFZ/fd-shifts">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                         <path
                                             d="M369.941 97.941l-83.882-83.882A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v416c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48V131.882a48 48 0 0 0-14.059-33.941zM332.118 128H256V51.882L332.118 128zM48 464V48h160v104c0 13.255 10.745 24 24 24h104v288H48zm101.677-115.115L116.854 320l32.822-28.885a8.793 8.793 0 0 0 .605-12.624l-17.403-18.564c-3.384-3.613-8.964-3.662-12.438-.401L62.78 313.58c-3.703 3.474-3.704 9.367.001 12.84l57.659 54.055a8.738 8.738 0 0 0 6.012 2.381 8.746 8.746 0 0 0 6.427-2.782l17.403-18.563a8.795 8.795 0 0 0-.605-12.626zm84.284-127.85l-24.401-7.084a8.796 8.796 0 0 0-10.905 5.998L144.04 408.061c-1.353 4.66 1.338 9.552 5.998 10.905l24.403 7.084c4.68 1.355 9.557-1.354 10.905-5.998l54.612-188.112c1.354-4.66-1.337-9.552-5.997-10.905zm87.258 92.545l-57.658-54.055c-3.526-3.307-9.099-3.165-12.439.401l-17.403 18.563a8.795 8.795 0 0 0 .605 12.625L267.146 320l-32.822 28.885a8.793 8.793 0 0 0-.605 12.624l17.403 18.564a8.797 8.797 0 0 0 12.439.401h-.001l57.66-54.055c3.703-3.473 3.703-9.366-.001-12.839z" />
@@ -168,7 +139,7 @@ License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1,
                                 </a>
                             </span>
                             <span class="link_icon">
-                                <a href="https://github.com/tbung/master-thesis/raw/main/main.pdf">
+                                <a href="https://arxiv.org/pdf/2211.15259">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                         <path
                                             d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z" />

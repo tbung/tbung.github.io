@@ -183,6 +183,10 @@ footer svg {
     }
 }
 
+a {
+    color: var(--color-links);
+}
+
 .container {
     padding-inline-start: 0;
     list-style: none;
@@ -196,11 +200,12 @@ footer svg {
     justify-items: center;
 }
 
-.single {
-    display: flex;
+.single, .paper {
+    display: inline;
     flex-direction: column;
     flex-grow: 1;
     background-image: var(--gradient-pink);
     border-radius: var(--border-radius-base);
     padding: 0.75rem;
+    width: calc(100% - 1.5rem);
 }
